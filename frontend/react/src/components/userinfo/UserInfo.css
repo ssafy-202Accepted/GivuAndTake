@@ -1,0 +1,104 @@
+.user-info-page {
+  display: flex;
+  height: 100vh;
+  background-color: #FBFAFF; /* 배경색 약간 변경 */
+}
+
+.user-info-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #FBFAFF;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 상자 그림자 추가 */
+}
+
+.user-info-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-button {
+  background-color: #6a5acd; /* 좀 더 진한 색상 */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #5a4db0; /* hover 효과 추가 */
+}
+
+.user-info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-picture {
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden; /* 이미지를 동그랗게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지가 잘리지 않고 맞춰지도록 */
+}
+
+.user-details {
+  text-align: center;
+}
+
+.user-name {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; /* 다크 그레이 색상 */
+}
+
+.region-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #555; /* 중간 그레이 */
+}
+
+.user-info-email,
+.user-info-landlinePhone,
+.user-info-mobilePhone {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #666; /* 텍스트 색상 약간 연하게 */
+}
+
+.user-info-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logout-button {
+  background-color: transparent;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  padding: 10px 0;
+  text-align: right;
+  transition: color 0.3s ease;
+}
+
+.logout-button:hover {
+  color: darkred; /* hover 시 어두운 빨간색 */
+}

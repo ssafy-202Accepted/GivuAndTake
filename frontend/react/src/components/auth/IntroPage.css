@@ -1,0 +1,79 @@
+/* 전체 레이아웃 */
+.intro-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #DAEBFD;
+  text-align: center;
+}
+
+/* 타이틀 스타일 */
+.mini-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+/* 로그인 및 회원가입 카드 컨테이너 */
+.auth-cards {
+  display: flex;
+  gap: 200px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.auth-card:hover {
+  transform: scale(1.05);
+}
+
+/* 아이콘 스타일 */
+.auth-icon {
+  width: 300px;
+  height: 350px;
+  margin-bottom: 0px;
+}
+
+/* 텍스트 스타일 */
+.auth-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8E72F1;
+  margin-bottom: 10px;
+}
+
+/* 회원가입 설명 텍스트 */
+.subtext {
+  font-size: 1.5rem;
+  color: black;
+  margin-top: 20px;
+}
+
+.title-container {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.intro-title {
+  font-size: 50px;
+  color: white;
+  text-shadow: 
+  -1px -1px 0 #000, /* 왼쪽 위 */
+  1px -1px 0 #000, /* 오른쪽 위 */
+ -1px  1px 0 #000, /* 왼쪽 아래 */
+  1px  1px 0 #000; /* 오른쪽 아래 */
+}
+
+/* 전체 페이지에서 텍스트 선택과 커서 깜빡임 방지 */
+* {
+  user-select: none; /* 사용자가 텍스트를 선택하지 못하게 설정 */
+  cursor: default;   /* 마우스 커서를 기본 화살표로 설정 */
+}
+
+/* 예외적으로 입력 필드에는 선택 가능하게 허용 */
+input, textarea {
+  user-select: text; /* 텍스트 입력 필드에서는 선택 가능하게 설정 */
+  cursor: text;      /* 입력 필드에서는 텍스트 커서가 나타나도록 설정 */
+}

@@ -1,0 +1,120 @@
+.userinfoupdate-page {
+  display: flex;
+  height: 100vh;
+  background-color: #FBFAFF; /* 배경색 약간 변경 */
+}
+
+.userinfoupdate-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #FBFAFF; /* 배경색 약간 변경 */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.userinfoupdate-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.userinfoupdate-save-button {
+  background-color: #6a5acd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.userinfoupdate-save-button:hover {
+  background-color: #5a4db0;
+}
+
+.userinfoupdate-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 중앙 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+  padding: 20px;
+  width: 100%;
+  height: 100%; /* 컨텐츠가 페이지 전체 높이를 차지하도록 설정 */
+}
+
+
+.userinfoupdate-profile-picture {
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.userinfoupdate-profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.userinfoupdate-details {
+  display: grid;
+  gap: 20px;
+  justify-content: center; /* 세로 중앙 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+  width: 100%;
+  max-width: 600px;
+}
+
+.userinfoupdate-region-name {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.userinfoupdate-label {
+  display: flex; /* 라벨과 입력 필드를 한 줄로 배치 */
+  align-items: center; /* 라벨과 입력 필드를 수직으로 가운데 정렬 */
+  margin-bottom: 10px; /* 아래에 여백 추가 */
+}
+
+.userinfoupdate-label strong {
+  margin-right: 10px; /* 라벨과 입력 필드 사이에 여백 추가 */
+}
+
+.userinfoupdate-input-field {
+  flex-grow: 1; /* 입력 필드가 남은 공간을 차지하게 함 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.userinfoupdate-input-field:focus {
+  border-color: #6a5acd;
+}
+
+.userinfoupdate-cancel-button {
+  background-color: #ccc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.userinfoupdate-cancel-button:hover {
+  background-color: #aaa;
+}

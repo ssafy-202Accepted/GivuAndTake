@@ -1,0 +1,95 @@
+.donations-statistics-container {
+  display: flex;
+  height: 120vh;
+}
+
+.donations-statistics-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fbfaff;
+}
+
+.donations-select-container h2 {
+  font-size: 36px;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.donations-dropdown {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  max-width: 200px;
+  width: 200px;
+}
+
+.donations-dropdown select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.donation-gender-statistics, .donation-category-statistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.donation-gender-statistics canvas, .donation-category-statistics canvas {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.pie-chart-title {
+  margin-bottom: 10px;
+}
+
+.donation-age-statistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.bar-chart-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+.donations-statistics-second-row {
+  display: flex;
+  align-items: center; /* Ensures all items are aligned centrally */
+}
+
+.donation-category-statistics, .donation-gender-statistics, .donation-age-statistics {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.purchase-statistics-title {
+  padding: 15px;
+}
+
+.purchaser table {
+  max-height: 400px;
+}

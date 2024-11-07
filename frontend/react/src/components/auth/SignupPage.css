@@ -1,0 +1,75 @@
+.signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #5949d6;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%; /* 시도와 시군구도 가로 길이가 동일하도록 설정 */
+}
+
+.flex-container .form-group {
+  flex: 1;
+  min-width: 0; /* Flexbox 환경에서 필드가 줄어드는 문제 해결 */
+}
+
+.input-container {
+  max-width: 380px;
+}

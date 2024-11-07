@@ -1,0 +1,88 @@
+.funding-reviews {
+  background-color: #FBFAFF;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.5;
+  height: auto; /* 높이를 자동으로 설정하여 내용에 맞게 조정 */
+  min-height: 300px; /* 최소 높이 설정 */
+  overflow-y: auto; /* 필요 시 스크롤이 나타나도록 설정 */
+  max-height: 600px; /* 필요 시 최대 높이 설정 */
+}
+
+
+.write-review-button-container {
+  display: flex;
+  justify-content: flex-end; /* 버튼을 오른쪽 끝에 배치 */
+  margin-top: 20px;
+}
+
+.write-review-button {
+  background-color: #6a5acd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%; /* 전체 너비의 90% */
+  height: 400px; /* 높이는 적절하게 조정 */
+  padding: 10px; /* 내부 여백 */
+  border-radius: 8px; /* 모서리를 둥글게 */
+  border: 1px solid #ccc; /* 테두리 설정 */
+  font-size: 16px; /* 폰트 크기 */
+  resize: none; /* 크기 조정 불가 */
+  outline: none; /* 포커스 시 테두리 제거 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
+  box-sizing: border-box; /* 패딩과 테두리도 너비에 포함 */
+  margin: 10px auto; /* 가운데 정렬을 위해 auto로 설정 */
+}
+
+textarea:focus {
+  border: 1px solid #6a5acd; /* 포커스 시 테두리 색상 */
+  background-color: #ffffff; /* 포커스 시 배경색 변경 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 포커스 시 더 진한 그림자 */
+}
+
+
+.review-buttons {
+  display: flex;
+  justify-content: center; /* 버튼을 가로로 중앙에 정렬 */
+  margin-top: 20px; /* 버튼과 텍스트 에어리어 사이에 여백 */
+}
+
+.submit-review-button,
+.cancel-review-button {
+  background-color: #6a5acd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.cancel-review-button {
+  background-color: #ccc;
+}
+
+.write-review-button-container {
+  display: flex;
+  justify-content: flex-end; /* 버튼을 오른쪽 끝에 배치 */
+  margin-top: 20px;
+}
+
+.write-review-button {
+  background-color: #6a5acd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}

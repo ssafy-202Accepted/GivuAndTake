@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>다음 주소 검색</title>
+</head>
+<body>
+<!-- 팝업이 표시될 영역 -->
+<div id="layer"
+     style="display:none;
+         position:fixed;
+         z-index:1;
+         background-color:white;
+         width:100%;  /* 화면 전체 너비 */
+         height:100%; /* 화면 전체 높이 */
+         top:0;
+         left:0;">
+</div>
+
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    window.onload = function() {
+        sample6_execDaumPostcode();
+    };
+
+    function sample6_execDaumPostcode() {
+        var element_layer = document.getElementById('layer');
+
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 도로명 주소, 지번 주소, 우편번호 출력
+                console.log("Road Address: ", data.roadAddress);
+                console.log("Jibun Address: ", data.jibunAddress);
+                console.log("Zonecode (Postal Code): ", data.zonecode);
+
+                // Android로 도로명 주소, 지번 주소, 우편번호 전달
+                Android.processAddress(
+                    data.roadAddress, // 도로명 주소
+                    data.jibunAddress, // 도로명 주소
+                    data.zonecode, // 도로명 주소
+                    data.autoRoadAddress, // 자동완성 도로명 주소
+                    data.autoJibunAddress, // 자동완성 지번 주소
+                    data.buildingCode, // 건물 코드
+                    data.buildingName, // 건물 이름
+                    data.sido, // 시도
+                    data.sigungu, // 시군구
+                    data.sigunguCode, // 시군구 코드
+                    data.roadnameCode, // 도로명 코드
+                    data.bcode, // 법정동 코드
+                    data.roadname, // 도로명
+                );
+
+                // 팝업 창 닫기
+                element_layer.style.display = 'none';
+            },
+            width: '100%',
+            height: '100%'
+        }).embed(element_layer);
+        element_layer.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

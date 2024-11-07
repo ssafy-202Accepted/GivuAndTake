@@ -1,0 +1,101 @@
+.sidebar {
+  min-width: 240px;
+  background-color: #c2a6f1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #a98de0;
+}
+
+.menu-item-active {
+  background-color: #d0bdf4;
+}
+
+.submenu-item {
+  font-size: 20px;
+  padding: 8px 10px;
+  margin: 5px 0;
+  background-color: #c2a6f1; /* 사이드바 배경색과 동일 */
+  color: white; /* 텍스트 색상 */
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: right; /* 기본 텍스트 정렬 */
+  padding-left: 10%; /* 왼쪽에서 10% 떨어지도록 설정 */
+  transition: background-color 0.3s ease;
+}
+
+.submenu-item-active {
+  background-color: #d0bdf4; /* 선택된 항목에 대한 배경색 */
+  color: #ffffff; /* 선택된 항목에 대한 텍스트 색상 */
+}
+
+.submenu-item:hover {
+  background-color: #b394e0; /* 서브메뉴 호버 시 색상 */
+}
+
+
+.custom-confirm-btn {
+  background-color: #c2a6f1 !important;
+  border: none !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  border-radius: 5px !important;
+  font-size: 16px !important;
+}
+
+.custom-cancel-btn {
+  background-color: #ffffff !important;
+  border: 1px solid #c2a6f1 !important;
+  color: #c2a6f1 !important;
+  padding: 10px 20px !important;
+  border-radius: 5px !important;
+  font-size: 16px !important;
+}
+
+.location {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}

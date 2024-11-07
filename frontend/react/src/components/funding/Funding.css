@@ -1,0 +1,181 @@
+.funding-page-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.funding-page-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #FBFAFF;
+}
+
+.funding-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.register-button {
+  background-color: #6a5acd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.funding-type-buttons,
+.funding-status-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.filter-button {
+  padding: 12px 24px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button.active {
+  background-color: #6a5acd;
+  color: white;
+}
+
+.funding-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 두 개의 열로 구성 */
+  gap: 20px;
+}
+
+.funding-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  height: auto; /* 자동 높이로 변경 */
+  max-width: 500px; /* 카드의 최대 너비 설정 */
+  flex: 1 1 auto; /* 그리드 안에서 가변적인 카드 크기 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 애니메이션 추가 */
+}
+
+/* 마우스 hover 효과 */
+.funding-card:hover {
+  transform: translateY(-10px); /* 카드가 위로 약간 올라가도록 설정 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 그림자 효과를 더 강조 */
+}
+
+.funding-card .funding-thumbnail {
+  background-color: #d8d8d8;
+  height: 160px;
+  width: 160px;
+  border-radius: 8px;
+}
+
+.funding-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: space-between; /* 세로로 균등하게 배치 */
+  height: 100%;
+}
+
+.funding-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  white-space: nowrap; /* 한 줄로 유지 */
+  overflow: hidden; /* 넘치는 부분 숨기기 */
+  text-overflow: ellipsis; /* 끝에 ... 추가 */
+  max-width: 330px; /* 제목이 길어질 때 최대 너비 설정 */
+}
+
+
+.funding-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.start-date {
+  margin: 0; /* 간격을 최소화 */
+  font-size: 20px;
+}
+
+.end-date {
+  margin: 0; /* 간격을 최소화 */
+  font-size: 20px;
+  margin-top: 10px; /* 시작일과 마감일 사이 간격을 줄임 */
+}
+
+.funding-rate {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  line-height: 1.2; /* 줄 간격을 줄여서 달성률과 퍼센트 값 사이를 좁힘 */
+}
+.pagination {
+  margin: 2% 10% 2% 10%;
+  text-align: center;
+}
+
+.pagination span {
+  margin: 0 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.pagination span:hover {
+  color: #6a5acd;
+}
+
+.status-label {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  position: absolute; /* 상태 레이블을 오른쪽 상단에 배치 */
+  top: 20px;
+  right: 20px;
+}
+
+/* 진행예정 - 하얀색 배경, 보라색 테두리 */
+.status-planned {
+  background-color: white;
+  color: #6a5acd;
+  border: 2px solid #6a5acd; /* 보라색 테두리 */
+}
+
+/* 진행중 - 보라색 배경 */
+.status-in-progress {
+  background-color: #6a5acd;
+  color: white;
+  border: 2px solid #6a5acd; /* 보라색 테두리 */
+}
+
+/* 완료 - 회색 배경 */
+.status-completed {
+  background-color: #d3d3d3;
+  color: white;
+  border: 2px solid #d3d3d3; /* 보라색 테두리 */
+}

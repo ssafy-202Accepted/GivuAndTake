@@ -1,0 +1,297 @@
+.funding-detail-layout {
+  display: flex;
+  height: 120vh;
+}
+
+.funding-detail-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #FBFAFF;
+}
+
+.funding-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.funding-detail-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 0; /* 위쪽과 아래쪽의 마진 제거 */
+  padding-bottom: 10px;
+}
+
+.funding-tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #ddd; /* 전체 탭 영역 하단에 선 추가 */
+}
+
+.funding-tabs button {
+  cursor: pointer;
+  font-size: 18px;
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  position: relative;
+  font-weight: 500;
+}
+
+.funding-tabs button.active {
+  font-weight: bold; /* 선택된 탭의 글씨를 굵게 */
+  color: #6a5acd; /* 선택된 탭의 글씨 색상 변경 */
+}
+
+.funding-tabs button.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #6a5acd;
+  bottom: -1px;
+  left: 0;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  margin-left: auto; /* 왼쪽 여백 자동 */
+}
+
+
+.edit-button,
+.save-button,
+.delete-button {
+  background-color: #6a5acd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.edit-buttons .edit-button {
+  border-radius: 8px;
+}
+
+.cancel-button {
+  background-color: #ccc; /* 취소 버튼 색상 */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.funding-detail-body {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative; /* 등록일을 오른쪽으로 배치하기 위해 position 설정 */
+}
+
+.funding-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 00;
+}
+
+.funding-info h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom:0px;
+  margin-top: 0px;
+}
+
+.funding-description {
+  background-color: white;
+  max-width: 1050px;
+  max-height: 300px; /* 높이 제한 추가 */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-y: auto; /* 스크롤이 가능하도록 설정 */
+}
+
+.funding-thumbnail {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #f0f0f0; /* 썸네일 영역의 기본 배경색 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.funding-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.thumbnail-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888; /* 대체 텍스트 색상 */
+  font-size: 16px;
+  background-color: #d8d8d8; /* 대체 이미지가 없을 때의 배경색 */
+  border-radius: 10px;
+}
+
+.achievement-rate {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.registration-date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  color: #888;
+}
+
+.write-review-button {
+  background-color: #6a5acd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block; /* 버튼을 인라인 블록으로 변경 */
+  margin-left: auto; /* 오른쪽으로 밀기 */
+}
+
+/* 수정 모드에서 인풋 필드와 텍스트 영역의 스타일 */
+.edit-input, .edit-textarea {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa; /* 인풋 필드 배경 */
+}
+
+.edit-textarea {
+  height: 200px; /* 텍스트영역 높이 */
+  resize: none; /* 사용자가 크기 조정 불가능 */
+}
+ 
+
+.input-row {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  margin-bottom: 0px;
+  margin-top: 10px;
+  width: 100%; /* 부모의 가로 너비에 맞추기 */
+}
+
+.input-row label {
+  width: 150px; /* 라벨 너비 고정 */
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 4%;
+  display: flex;
+}
+
+.edit-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.funding-type {
+  display: flex;
+  align-items: center;
+}
+
+input[type="date"] {
+  width: 100%; /* 날짜 input 너비 조정 */
+}
+
+.funding-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 중앙 정렬 */
+  align-items: center;     /* 가로 중앙 정렬 */
+  height: 100%;            /* 부모의 높이를 100%로 설정 */
+}
+
+.swal2-delete-button {
+  background-color: #6a5acd !important; /* 보라색 */
+  color: white !important;
+  border: 2px solid #6a5acd !important; /* 보라색 테두리 */
+  border-radius: 8px;
+
+}
+
+.swal2-cancel-button {
+  background-color: white !important; /* 하얀색 배경 */
+  color: #6a5acd !important; /* 보라색 글씨 */
+  border-radius: 8px;
+  border: 2px solid #6a5acd !important; /* 보라색 테두리 */
+}
+
+
+.back-to-list {
+  display: flex;
+  justify-content: center; /* 중앙으로 정렬 */
+  margin-top: 20px;
+}
+
+.back-list-button {
+  background-color: #6a5acd; /* 보라색 배경 */
+  color: white; /* 흰색 글씨 */
+  padding: 10px 20px; /* 패딩 조정 */
+  font-size: 16px; /* 글씨 크기 */
+  border: none; /* 테두리 제거 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+  transition: background-color 0.3s ease; /* 호버 시 배경색 변화를 위한 트랜지션 추가 */
+}
+
+.back-list-button:hover {
+  background-color: #5a4eb7; /* 호버 시 어두운 보라색으로 변경 */
+}
+
+.funding-description {
+  margin-bottom: 20px;
+}
+
+.funding-content-image {
+  width: 100%; 
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.edit-textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}

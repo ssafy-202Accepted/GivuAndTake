@@ -1,0 +1,89 @@
+.funding-comments {
+  background-color: #FBFAFF;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* 펀딩 소개 정도의 최대 너비 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
+  margin-bottom: 40px; /* 페이지네이션과의 간격을 위해 아래쪽에 여백 추가 */
+}
+
+.funding-comments h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 댓글 리스트를 Flexbox로 2열 구성 */
+.comments-grid {
+  display: block;
+  gap: 20px; /* 댓글 간격 */
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 20px; /* 댓글 간격 추가 */
+  box-sizing: border-box; /* 튀어나오지 않도록 박스 크기 조정 */
+}
+
+.comment .profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.comment-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.comment-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+.comment-text {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.comment-date {
+  font-size: 12px;
+  color: #999;
+  align-self: flex-end;
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px; /* 위쪽에 여백 추가 */
+}
+
+.pagination button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #6a5acd;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
